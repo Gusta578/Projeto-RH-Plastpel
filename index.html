@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Funcionários - PLASTPEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F2F2;
+            color: #1E3A5F;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #0073AA, #005F8D);
+            padding: 20px;
+            color: white;
+        }
+        .logo {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .search-container {
+            margin: 20px auto;
+            max-width: 400px;
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #005F8D;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0073AA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #005F8D;
+        }
+        .result-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            color: #1E3A5F;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo PLASTPEL" class="logo">
+        <h1>Consulta de Funcionários</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" placeholder="Digite o nome ou ID do funcionário...">
+            <button>Buscar</button>
+        </div>
+        <div class="result-container">
+            <!-- Resultados da pesquisa aparecerão aqui -->
+        </div>
+    </main>
+</body>
+</html>
